@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure Dream</title>
+    <link rel="stylesheet" href="1_style.css">
+    
+</head>
+<body>
+    <div>
+        <!--logo-->
+        <hr id="hr1" style="z-index: -1;">
+        <span style="color:white; font-size: 300%; font-weight: 100; z-index: -1;">Adventure Dream</span>
+        
+        <hr id="hr2" style="z-index: -1;">
+        <span style="font-size: 200%; color:rgba(255, 255, 255, 0.635); font-weight: 100; z-index: -1;">Share your camping or traveling 
+            experiences and go on more beautiful adventures</span>      
+            
+        <br>
+        <span style="position:relative; font-size: 150%; color:rgba(255, 255, 255, 0.692); margin-top:10px; z-index: -1;">I just want this to be a place where you feel 
+            comfortable sharing your story and, your dream.</span>
+        
+        <button id="loginButton"
+        onmouseover="button();" onmouseout="button_out();" onclick="location.href='2_login.html'; loginCheck();">login</button>
+        
+        <button id="logoutButton"
+        onmouseover="button_logout();" onmouseout="button_out_logout();" onclick="logout();">logout</button>
+        
+        <br><br>
+    
+    </div>
+        
+        
+        <!--login-->
+        
+
+        
+
+        <hr id="hr3" style="z-index: -1; position:relative;"/>
+
+        <!--계정관리-->
+        <div id='account' >
+            <p id="welcome"></p>
+        </div>
+        
+        
+        
+        <!--grid-->
+        <div class="grid">
+            <p id="box1" onmouseover="box1()" onmouseout="box1_out()" style="text-align: center; font-size: 160%; font-weight: 200;"><br>Camping</p>
+            <p id="box2" onmouseover="box2()" onmouseout="box2_out()" style="text-align: center; font-size: 160%; font-weight: 200;"><br>Travel</p>
+            <p id="box3" onmouseover="box3()" onmouseout="box3_out()" style="text-align: center; font-size: 160%; font-weight: 200;"><br>Free Board</p>
+            <p id="box4" onmouseover="box4()" onmouseout="box4_out()" style="text-align: center; font-size: 160%; font-weight: 200;"><br>Question Board</p>
+            <p id="box5" onmouseover="box5()" onmouseout="box5_out()" style="text-align: center; font-size: 160%; font-weight: 200;"><br>Instruction</p>
+            <p id="box6" onmouseover="box6()" onmouseout="box6_out()" style="text-align: center; font-size: 160%; font-weight: 200;" onclick="location.href='contact.html'"><br>Contact</p>
+        </div>
+
+        
+                
+
+        <script src="1_mainjs.js"></script>
+        <script src="1.5_loginSt.js"></script>
+        
+    
+    </div>
+</body>
+</html>

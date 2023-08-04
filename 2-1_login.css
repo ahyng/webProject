@@ -1,0 +1,58 @@
+body{
+    background-image: url('https://cdn.pixabay.com/photo/2022/08/31/13/05/sea-7423274_640.jpg');
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+}
+
+#login_box{
+    background-color: rgba(255, 255, 255, 0.3);
+    width:40%;
+    
+}
+
+#signup_box{
+    background-color: rgba(255, 255, 255, 0.3);
+    width:40%;
+    
+}
+
+input::placeholder{
+    color:rgba(255, 255, 255, 0.45);
+    font-weight:lighter;
+}
+
+hr {
+    border:0px; height:2px; 
+    background: linear-gradient(to left, white, transparent);
+}
+
+#backbutton {
+    width:10vw; height:5vh; position:relative; top:1vh; 
+    float:right; font-size: 3vh; cursor:pointer; 
+    background-color: rgba(240, 248, 255, 0.071); 
+    font-weight: 150; border:solid 0.7px; border-color: rgba(255, 255, 255, 0.792); 
+    font-weight:100; color:white;
+}
+
+input{
+    outline:none; color: white; 
+    font-weight:100; font-size: 250%; width:60%; 
+    border-top: none; border-left: none; border-right:none; 
+    background-color:transparent; border-bottom-color: white;
+}
+
+.inputButton{
+    font-size: 200%; width:62%; height:60px; border:none; border-radius: 40px; 
+    background-color: rgba(255, 255, 255, 0.83); cursor:pointer;
+}
+
+.pagemove{
+    color:white; font-size: 130%; 
+    text-decoration:underline 1px; text-decoration-color: white; cursor:pointer;
+}
+
+.pagemove.hover{
+    color:blue;
+    background-color: blue;
+}

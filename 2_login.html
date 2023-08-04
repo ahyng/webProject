@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="2-1_login.css">
+    <script src="2-2_login.js"></script>
+    <script src="1.5_loginSt.js"></script>
+</head>
+<body>
+    <hr />
+
+    <button id="backbutton" onmouseover="button();" onmouseout="button_out();" 
+    onclick="location.href='1_main.html'">back</button>
+
+    <div id="login_box" style="display:block; position:relative; text-align: center; top:200px; left:560px;">
+        <br>
+        <!--제목-->
+        <p style="color:rgb(0, 0, 0); font-size:250%; font-weight: 200;">Login</p>
+        <!--input-->
+        <p><input type="input" id="loginID" class="loginInput" placeholder="ID";></p>
+        <p><input type="password" id="loginPWD" class="loginInput" placeholder="password";></p><br>
+        <button class="inputButton" onclick="login()">login</button>
+        <br><br>
+        <!--회원가입-->
+        <p class="pagemove" onclick="signupPage()">회원가입</p>
+        <br><br>
+    </div>
+
+    <div id="signup_box" style="display:none; position:relative; text-align: center; top:200px; left:560px;">
+        <br>
+        <!--제목-->
+        <p style="color:rgb(0, 0, 0); font-size:250%; font-weight: 200; margin:10px;">Sign up</p>
+        <div style="background-color: rgba(211, 211, 211, 0.342);">
+            <span style="color:rgba(255, 255, 255, 0.678); font-size:180%; font-weight: 400; margin:0px;">회원가입</span><br>
+            <span style="color:rgba(255, 255, 255, 0.678); font-size:150%; 
+            font-weight: 200;">아이디와 비밀번호를 설정하시고 sign up 버튼을 클릭해주세요.</span><br>
+            <span style="color:rgba(255, 255, 255, 0.678); font-size:150%; 
+            font-weight: 200;">아이디와 비밀번호는 영어로 설정해 주시길 바랍니다.</span>
+        </div>
+        <!--input-->
+        <p><input type="input" class="signupInput" id="signupID" placeholder="ID";></p>
+        <p><input type="password" class="signupInput" id="signupPWD" placeholder="password";></p><br>
+        <button class="inputButton" onclick="signUp()">sign up</button>
+        <br><br>
+        <!--회원가입-->
+        <p class="pagemove" onclick="loginPage()">로그인 화면으로 이동</p>
+        <br><br>
+    </div>
+</body>
+</html>

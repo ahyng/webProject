@@ -1,0 +1,112 @@
+body{
+    background-image: url('https://cdn.pixabay.com/photo/2016/02/13/12/26/aurora-1197753_1280.jpg');
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+}  
+
+/*hr{color: rgba(211, 211, 234, 0.429);*/
+
+#hr1 {
+    border:0px; height:2px; 
+    background: linear-gradient(to left, white, transparent);
+}
+
+#hr2 {
+    border:0px; height:2px; 
+    background: linear-gradient(to right, white, transparent);
+}
+
+#hr3 {
+    border:0px; height:0.5px; 
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.608), transparent);
+}
+
+#loginButton{
+    display:block; width:10vw; height:5vh; position:relative; top:1vh; float:right; font-size: 3vh; cursor:pointer; 
+    background-color: rgba(240, 248, 255, 0.071); font-weight: 150; border:solid 0.7px; border-color: rgba(255, 255, 255, 0.792);
+    font-weight:100; color:white; z-index: 2;
+}
+
+#logoutButton{
+    display:none; width:10vw; height:5vh; position:relative; top:1vh; float:right; 
+    font-size: 3vh; cursor:pointer; 
+    background-color: rgba(240, 248, 255, 0.071); font-weight: 150; border:solid 0.7px; border-color: rgba(255, 255, 255, 0.792); 
+    font-weight:100; color:white; z-index: 2;
+}
+
+#account{
+    position:relative; width:360px; height:400px; 
+    background-color: white; float:right; z-index: 1; background-color: rgba(240, 248, 255, 0.803);   
+}
+
+.grid{
+    /*margin:0;*/
+    position:absolute;
+    top:30%;
+    left:7%;
+    display:grid;
+    width:50%;
+    height:60%;
+
+    column-gap: 2%;
+    row-gap: 2.5%;
+    grid-template-columns: 55% 55% 55%;
+    grid-template-rows: 48% 48%;
+}
+
+#box1{
+    background-color: white;
+    margin:0;
+    background-size: cover;
+    background-blend-mode: multiply;
+    cursor:pointer;   
+    background: linear-gradient(to left bottom, white, rgba(255, 255, 255, 0.4)); 
+}
+
+#box2{
+    background-color: white;
+    margin:0;
+    background-size: cover;
+    background-blend-mode: multiply;
+    cursor:pointer;    
+    background: linear-gradient(to bottom, white, rgba(255, 255, 255, 0.55));
+}
+
+#box3{
+    background-color: white;
+    margin:0;
+    background-size: cover;
+    background-blend-mode: multiply;
+    cursor:pointer;    
+    background: linear-gradient(to right bottom, white, rgba(255, 255, 255, 0.4));
+}
+
+#box4{
+    background-color: white;
+    margin:0;
+    background-size: cover;
+    background-blend-mode: multiply;
+    cursor:pointer;    
+    background: linear-gradient(to left bottom, white, rgba(255, 255, 255, 0.4));
+}
+
+#box5{
+    background-color: white;
+    margin:0;
+    background-size: cover;
+    background-blend-mode: multiply;
+    cursor:pointer;    
+    background: linear-gradient(to bottom, white, rgba(255, 255, 255, 0.55));
+}
+
+#box6{
+    background-color: white;
+    margin:0;
+    background-size: cover;
+    background-blend-mode: multiply;
+    cursor:pointer;    
+    background: linear-gradient(to right bottom, white, rgba(255, 255, 255, 0.4));
+}
+
+
