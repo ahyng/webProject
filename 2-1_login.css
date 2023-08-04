@@ -47,12 +47,16 @@ input{
     background-color: rgba(255, 255, 255, 0.83); cursor:pointer;
 }
 
-.pagemove{
-    color:white; font-size: 130%; 
-    text-decoration:underline 1px; text-decoration-color: white; cursor:pointer;
+.inputButton:hover{
+    background-color: rgb(196, 216, 231);
 }
 
-.pagemove.hover{
-    color:blue;
-    background-color: blue;
+.pagemove{
+    color:white; font-size: 130%; 
+    text-decoration:underline 1px; text-decoration-color: white; cursor:pointer; 
+}
+
+.pagemove:hover{
+    color:rgb(201, 201, 201);
+    text-decoration-color: rgb(201, 201, 201);
 }

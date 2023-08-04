@@ -28,16 +28,28 @@ body{
     font-weight:100; color:white; z-index: 2;
 }
 
-#logoutButton{
+#accountHome{
     display:none; width:10vw; height:5vh; position:relative; top:1vh; float:right; 
     font-size: 3vh; cursor:pointer; 
     background-color: rgba(240, 248, 255, 0.071); font-weight: 150; border:solid 0.7px; border-color: rgba(255, 255, 255, 0.792); 
     font-weight:100; color:white; z-index: 2;
 }
 
+#accountHome:hover{
+    background-color: rgba(211, 211, 234, 0.729);
+    color:black;
+}
+
+#logoutButton{
+    display:none; width:10vw; height:5vh; position:relative; top:1vh; float:right; 
+    font-size: 3vh; cursor:pointer; 
+    background-color: rgba(111, 111, 111, 0.071); font-weight: 150; border:solid 0.7px; border-color: rgba(255, 255, 255, 0.792); 
+    font-weight:100; color:white; z-index: 2;
+}
+
 #account{
-    position:relative; width:360px; height:400px; 
-    background-color: white; float:right; z-index: 1; background-color: rgba(240, 248, 255, 0.803);   
+    position:relative; width:360px; height:200px; padding:15px;
+    background: linear-gradient(to left bottom, white, rgba(255, 255, 255, 0.8)); float:right; z-index: 1;
 }
 
 .grid{

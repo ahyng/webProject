@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adventure Dream</title>
     <link rel="stylesheet" href="1_style.css">
-    
+
 </head>
 <body>
     <div>
@@ -24,8 +24,7 @@
         <button id="loginButton"
         onmouseover="button();" onmouseout="button_out();" onclick="location.href='2_login.html'; loginCheck();">login</button>
         
-        <button id="logoutButton"
-        onmouseover="button_logout();" onmouseout="button_out_logout();" onclick="logout();">logout</button>
+        <button id="accountHome">Home</button>
         
         <br><br>
     
@@ -40,8 +39,13 @@
         <hr id="hr3" style="z-index: -1; position:relative;"/>
 
         <!--계정관리-->
-        <div id='account' >
-            <p id="welcome"></p>
+        <div id='account' style="padding-top:0px">
+            <p id="welcome" style="font-size: 25px; background-color: rgba(228, 228, 228, 0.695);">
+            <span id="ID_name" style="font-weight: 500;"></span> <span id="hello" style="font-weight: 200;"></span>
+            </p>
+            <button id="logoutButton"
+             onmouseover="button_logout();" onmouseout="button_out_logout();" onclick="logout();">logout</button>
+        
         </div>
         
         
