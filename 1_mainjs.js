@@ -33,11 +33,12 @@ console.log(cookies);
 function loginCheck() {
     if (cookies[0].length > 0) {
         document.getElementById('loginButton').style.display = 'none';
-        document.getElementById('welcome').innerHTML = cookies[0].slice(3) + '님 안녕하세요.'
-        document.getElementById('logoutButton').style.display = 'block';
+        document.getElementById('ID_name').innerHTML = cookies[0].slice(3)
+        document.getElementById('hello').innerHTML = '님 안녕하세요.'
+        document.getElementById('accountHome').style.display = 'block';
     } else {
         document.getElementById('welcome').style.display = 'none';
-        document.getElementById('logoutButton').style.display = 'none';
+        document.getElementById('accountHome').style.display = 'none';
         document.getElementById('loginButton').style.display = 'block';
     }
 } 
