@@ -40,16 +40,41 @@ body{
     color:black;
 }
 
-#logoutButton{
-    display:none; width:10vw; height:5vh; position:relative; top:1vh; float:right; 
-    font-size: 3vh; cursor:pointer; 
-    background-color: rgba(111, 111, 111, 0.071); font-weight: 150; border:solid 0.7px; border-color: rgba(255, 255, 255, 0.792); 
-    font-weight:100; color:white; z-index: 2;
-}
+
 
 #account{
-    position:relative; width:360px; height:200px; padding:15px;
-    background: linear-gradient(to left bottom, white, rgba(255, 255, 255, 0.8)); float:right; z-index: 1;
+    display:none; position:relative; width:360px; height:150px; padding:15px;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.413), rgba(255, 255, 255, 0.8)); float:right; z-index: 1;
+}
+
+#logout_button{
+    width:170px; height:40px; position:relative; padding-left:20px; padding-right:20px; 
+    font-size: 3vh; cursor:pointer; 
+    background-color: rgba(111, 111, 111, 0.071); font-weight: 150; border:solid 0.7px; border-color: rgba(0, 0, 0, 0.533); 
+    font-weight:100; color:rgba(0, 0, 0, 0.717); z-index: 3;
+}
+
+#logout_button:hover{
+    background-color: rgba(196, 216, 231,0.6);
+}
+
+#account_manage:hover{
+    background-color: rgba(196, 216, 231,0.6);
+}
+
+#account_manage{
+    width:170px; height:40px; position:relative; padding-left:20px; padding-right:20px; 
+    font-size: 2.5vh; cursor:pointer; 
+    background-color: rgba(111, 111, 111, 0.071); border:solid 0.7px; border-color: rgba(0, 0, 0, 0.533); 
+    font-weight:400; color:rgba(0, 0, 0, 0.702); z-index: 3;
+}
+
+.button_grid{
+    padding-left: 5px;
+    position:absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
 }
 
 .grid{

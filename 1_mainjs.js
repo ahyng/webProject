@@ -45,6 +45,15 @@ function loginCheck() {
 
 loginCheck();
 
+    
+
+function home() {
+    if (document.getElementById('account').style.display == 'none') {
+        document.getElementById('account').style.display = 'block';
+    } else{
+        document.getElementById('account').style.display = 'none';
+    }
+}
 
 //box1
 function box1() {
