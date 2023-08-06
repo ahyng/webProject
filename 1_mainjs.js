@@ -48,10 +48,21 @@ loginCheck();
     
 
 function home() {
-    if (document.getElementById('account').style.display == 'none') {
+    if (document.getElementById('account').style.display == '') {
         document.getElementById('account').style.display = 'block';
-    } else{
-        document.getElementById('account').style.display = 'none';
+    } 
+}
+
+
+function account_display() {
+    if (document.getElementById('account').style.display == 'block') {
+        document.getElementById('account').style.display = 'block';
+    } 
+}
+
+function account_hide() {
+    if (document.getElementById('account').style.display == 'block') {
+    document.getElementById('account').style.display = '';
     }
 }
 
