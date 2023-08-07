@@ -24,7 +24,7 @@
         <button id="loginButton"
         onmouseover="button();" onmouseout="button_out();" onclick="location.href='2_login.html'; loginCheck();">login</button>
         
-        <button id="accountHome" onmouseover="home()" onmouseout="">Home</button>
+        <button id="accountHome" onclick="home()">Home</button>
         
         <br><br>
     
@@ -39,13 +39,13 @@
     <hr id="hr3" style="z-index: -1; position:relative;"/>
 
     <!--계정관리-->
-    <div id='account' style="padding-top:0px;" onmouseover="account_display(); home()" onmouseout="account_hide()">
+    <div id='account' style="padding-top:0px;">
         <p id="welcome" style="font-size: 25px; background-color: rgba(196, 216, 231, 0.7);">
         <span id="ID_name" style="font-weight: 500; color:rgba(0, 0, 0, 0.707);"></span> <span id="hello" style="color:rgba(0, 0, 0, 0.608); font-weight: 200;"></span>
         </p>
         <div class="button_grid">
-            <button id="logout_button">logout</button>
-            <button id="account_manage">계정관리</button>
+            <button id="logout_button" onclick="logout()">logout</button>
+            <button id="account_manage" onclick="account_delete()">계정삭제</button>
         </div>
     </div>
         

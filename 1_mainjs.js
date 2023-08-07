@@ -19,7 +19,7 @@ function button_out_logout() {
     document.getElementById('logoutButton').style.color="white";
 }
 
-
+//로그아웃
 function logout() {
     setCookie('ID', cookies[0].slice(3), -1);
     alert('로그아웃 되었습니다.')
@@ -27,13 +27,14 @@ function logout() {
     loginCheck();
 }
 
+//로그인 여부 확인
 var cookies = document.cookie.split(';');
 console.log(cookies);
 
 function loginCheck() {
     if (cookies[0].length > 0) {
         document.getElementById('loginButton').style.display = 'none';
-        document.getElementById('ID_name').innerHTML = cookies[0].slice(3)
+        document.getElementById('ID_name').innerHTML = cookies[0].slice(3);
         document.getElementById('hello').innerHTML = '님 안녕하세요.'
         document.getElementById('accountHome').style.display = 'block';
     } else {
@@ -45,26 +46,32 @@ function loginCheck() {
 
 loginCheck();
 
+//계정삭제
+function account_delete() {
+    var confirm_pwd = prompt('비밀번호를 입력하세요.')
+    if (confirm_pwd == localStorage.getItem(cookies[0].slice(3))) {
+        
+        if (confirm("정말 삭제하시겠습니까?")) {         
+            localStorage.removeItem(cookies[0].slice(3));
+            alert('계정이 삭제되었습니다. \n로그인하시려면 다시 회원가입 바랍니다.')
+            logout()
+        } else {
+            alert('취소되었습니다.')
+        }
+    } else {
+        alert('비밀번호가 일치하지 않습니다.')
+    }
+}
     
-
+//home버튼 + account 화면 display
 function home() {
     if (document.getElementById('account').style.display == '') {
         document.getElementById('account').style.display = 'block';
-    } 
-}
-
-
-function account_display() {
-    if (document.getElementById('account').style.display == 'block') {
-        document.getElementById('account').style.display = 'block';
-    } 
-}
-
-function account_hide() {
-    if (document.getElementById('account').style.display == 'block') {
-    document.getElementById('account').style.display = '';
+    } else {
+        document.getElementById('account').style.display = 'none';
     }
 }
+
 
 //box1
 function box1() {
