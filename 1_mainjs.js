@@ -65,7 +65,7 @@ function account_delete() {
     
 //home버튼 + account 화면 display
 function home() {
-    if (document.getElementById('account').style.display == '') {
+    if (document.getElementById('account').style.display == 'none') {
         document.getElementById('account').style.display = 'block';
     } else {
         document.getElementById('account').style.display = 'none';
@@ -157,7 +157,7 @@ function box5_out() {
     document.getElementById('box5').style.background="linear-gradient(to bottom, white, rgba(255, 255, 255, 0.55))";
 }
 
-//box6 https://cdn.pixabay.com/photo/2017/08/29/06/17/lightbulb-2692247_640.jpg
+//box6 (원래사진 : https://cdn.pixabay.com/photo/2017/08/29/06/17/lightbulb-2692247_640.jpg)
 function box6() {
     document.getElementById('box6').style.backgroundImage="url('https://cdn.pixabay.com/photo/2021/05/05/20/15/phone-booth-6231878_640.jpg')"
     document.getElementById('box6').style.backgroundSize="cover";

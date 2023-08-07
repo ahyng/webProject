@@ -43,15 +43,15 @@ body{
 
 
 #account{
-    display:none; position:relative; width:360px; height:180px; padding:15px;
-    background: linear-gradient(to top, rgba(255, 255, 255, 0.413), rgba(255, 255, 255, 0.8)); float:right; z-index: 2;
-    box-shadow: 5px 5px 5px 5px rgba(116, 116, 116, 0.6);
+    display:none; position:relative; width:360px; height:160px; padding:15px;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.9)); float:right; z-index: 2;
+    box-shadow: 3px 3px 3px 3px rgba(238, 238, 238, 0.486);
 }
 
 #logout_button{
     width:170px; height:40px; position:relative; padding-left:20px; padding-right:20px; 
     font-size: 3vh; cursor:pointer; 
-    background-color: rgba(111, 111, 111, 0.071); font-weight: 150; border:solid 0.7px; border-color: rgba(0, 0, 0, 0.533); 
+    background-color: rgba(111, 111, 111, 0.071); font-weight: 150; border:solid 1px; border-color: rgba(130, 130, 214, 0.9); 
     font-weight:100; color:rgba(0, 0, 0, 0.717); z-index: 3;
 }
 
@@ -66,7 +66,7 @@ body{
 #account_manage{
     width:170px; height:40px; position:relative; padding-left:20px; padding-right:20px; 
     font-size: 2.5vh; cursor:pointer; 
-    background-color: rgba(111, 111, 111, 0.071); border:solid 0.7px; border-color: rgba(0, 0, 0, 0.533); 
+    background-color: rgba(111, 111, 111, 0.071); border:solid 0.7px; border-color: rgba(130, 130, 214, 0.9);
     font-weight:400; color:rgba(0, 0, 0, 0.702); z-index: 3;
 }
 
