@@ -1,0 +1,25 @@
+body{
+    background-image: url('https://cdn.pixabay.com/photo/2022/08/31/13/05/sea-7423274_640.jpg');
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+}
+
+#backbutton {
+    width:10vw; height:5vh; position:relative; top:1vh; 
+    float:right; font-size: 3vh; cursor:pointer; 
+    background-color: rgba(240, 248, 255, 0.071); 
+    font-weight: 150; border:solid 0.7px; border-color: rgba(255, 255, 255, 0.792); 
+    font-weight:100; color:white;
+}
+
+#hr1 {
+    border:0px; height:2px; 
+    background: linear-gradient(to left, white, transparent);
+}
+
+#hr2 {
+    border:0px; height:2px; 
+    background: linear-gradient(to right, white, transparent);
+}
+
